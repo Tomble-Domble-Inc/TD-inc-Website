@@ -1,0 +1,110 @@
+        :root {
+            --header-color: rgb(156, 255, 132);
+            --subheader-color: rgb(120, 224, 93);
+            --subheader-text-color:white;
+            --base-color: white;
+            --base-text-color:black;
+        }
+
+        .darkmode {
+            --header-color: rgb(57, 136, 38);
+            --subheader-color: rgb(35, 99, 19);
+            --subheader-text-color:black;
+            --base-color: rgb(63, 63, 63);
+            --base-text-color:white;
+        }
+
+        #theme-switch {
+            height: 50px;
+            width: 50px;
+            padding: 0;
+            border-radius: 10%;
+            background-color: var(--base-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #theme-switch svg {
+            fill: var(--base-text-color)
+        }
+
+        #theme-switch svg:last-child {
+            display: none;
+        }
+
+        .darkmode #theme-switch svg:first-child {
+            display: none;
+        }
+        .darkmode #theme-switch svg:last-child {
+            display: block;
+        }
+        
+        body {
+            margin:0;
+            font-family: Verdana;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--base-color);
+            color: var(--base-text-color);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:20px;
+            background-color: var(--header-color);
+            color: var(--base-text-color);
+            padding:5px;
+        }
+        .subheader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:20px;
+            background-color: var(--subheader-color);
+            color: var(--subheader-text-color);
+            padding:5px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .contentcolumn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        main {
+            flex: 1;
+        }
+        
+        #bottom {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background-color: var(--subheader-color);
+            color: var(--subheader-text-color);
+            padding:5px;
+        }
+        #bottom a {
+            color: blue;
+            text-decoration: none;
+        }
